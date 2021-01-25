@@ -3,8 +3,12 @@ import s from './navlink.module.css';
 
 const Navlink = () => {
     return ( <nav className={s.nav}>
-    <div>Profile</div>
-    <div>Messages</div>
+    <div className={s.item}>
+    <Navlink to="/profile">Profile </Navlink>
+    </div>
+    <div  className={s.item}>
+    <Navlink to="/dialogs">Messages</Navlink>
+    </div>
   </nav>
 
     )

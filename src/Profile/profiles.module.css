@@ -1,9 +1,8 @@
-.profile {
-    grid-area: p;
-    background-color: brown;
 
+.profile .mainImg {
+    width: 100%;
+    height: 200px;
 }
-
 .mainImg {
     width: 100%;
     height: 200px;
