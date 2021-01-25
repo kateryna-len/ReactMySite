@@ -1,0 +1,22 @@
+.header {
+    
+    grid-area: h;
+    background-color: black;
+    
+    
+}
+.header .logo {
+
+    text-align: left;
+    padding-left: 20px ;
+    color: white;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header .logo .p {
+    font-weight: 200;
+}
+.header .logo span {
+    font-weight: 800;
+}

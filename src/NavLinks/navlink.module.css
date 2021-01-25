@@ -1,0 +1,10 @@
+.nav {
+    grid-area: n;
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left: 20px;
+
+}
