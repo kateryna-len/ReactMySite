@@ -16,8 +16,9 @@
 
 .item a {
     text-decoration: none;
+    
 }
 
-.active {
+.active  {
     color: red;
 }

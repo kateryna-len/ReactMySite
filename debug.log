@@ -504,3 +504,5 @@
 [0125/164502.981:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7fff0548f3a0 of 64 bytes failed: Запрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
 [0125/164503.154:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Попытка доступа к процессу, выполняющему процедуру завершения. (0xc000010a)
 [0125/164503.950:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\User\AppData\Local\AVAST Software\Browser\User Data\Crashpad\attachments\9030d83c-8358-4450-bbcb-34c4df0640c3: Системе не удается найти указанный путь. (0x3)
+[0125/184837.150:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\User\AppData\Local\AVAST Software\Browser\User Data\Crashpad\attachments\e5cd2670-1a93-46ea-935c-04aeade9b9d6: Системе не удается найти указанный путь. (0x3)
+[0125/194627.082:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)

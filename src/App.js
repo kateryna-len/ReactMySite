@@ -1,17 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './components/Header/Header';
-import Navlink from './NavLinks/Navlink';
 import Profiles from './Profile/Profile';
 import Dialogs from './Dialogs/Dialogs';
 import { BrowserRouter, Route } from 'react-router-dom';
+import List from './Lists/List';
 
 function App() {
   return ( 
   <BrowserRouter>
   <div className="wrapper">
     <Header />
-    <Navlink />
+    <List />
+    
     <div className="wrapper-content">
     <Route path='/profile' component={Profiles} />
     <Route path='/dialogs' component={Dialogs} />
