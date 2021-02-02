@@ -6,7 +6,8 @@ import Dialogs from './Dialogs/Dialogs';
 import { BrowserRouter, Route } from 'react-router-dom';
 import List from './Lists/List';
 
-function App() {
+function App(props) {
+  
   return ( 
   <BrowserRouter>
   <div className="wrapper">
@@ -14,8 +15,12 @@ function App() {
     <List />
     
     <div className="wrapper-content">
-    <Route path='/profile' component={Profiles} />
-    <Route path='/dialogs' component={Dialogs} />
+    <Route path='/profile' render = {() => <Profiles 
+    state={props.state.profileState}
+    addPost={props.addPost}
+     />} />
+    <Route path='/dialogs' render = {() => <Dialogs state={props.state.dialogsState}  />} />
+    
     </div>
     </div>
     </BrowserRouter>

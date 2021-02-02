@@ -2,16 +2,23 @@ import React from "react";
 import s from "./Mypost.module.css";
 import Post from "./Post/Post";
 
-const Mypost = () => {
+const Mypost = (props) => {
+    let newPostElement = React.createRef();
+    let addPost = () => {
+        let text = newPostElement.current.value;
+        props.addPost(text)
+        newPostElement.current.value=' ';
+    }
+    
     return ( <div>
         My post
         <div>
-        <textarea></textarea>
-        <button>Add</button>
+        <textarea ref ={ newPostElement } ></textarea>
+        <button onClick={ addPost } >Add</button>
     </div>
         <div className={s.posts}>
-        <Post text="I said May" account="23" />
-        <Post text="How are you ancestor!" account="12" />
+        {props.postData.map(Post)}
+        
         </div>
     </div>
 
