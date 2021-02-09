@@ -12,7 +12,9 @@ const Dialogs = (props) => {
             {props.state.dialog.map(DialogsItems)}
             </div>
             <div className={s.messages}>
-             {props.state.messageData.map(Message)}
+            <div> {props.state.messageData.map(Message)}</div>
+            <div><textarea placeholder='Enter your message'></textarea></div>
+            <div><button onClick={()=> {alert('dfd');}}>Send</button></div>
             </div>
     </div>)
 }

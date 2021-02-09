@@ -16,10 +16,11 @@ function App(props) {
     
     <div className="wrapper-content">
     <Route path='/profile' render = {() => <Profiles 
-    state={props.state.profileState}
-    addPost={props.addPost}
+    profileState={props.state.profileState}
+    dispatch={props.dispatch}
      />} />
-    <Route path='/dialogs' render = {() => <Dialogs state={props.state.dialogsState}  />} />
+    <Route path='/dialogs' render = {() => <Dialogs 
+     state= {props.state.dialogsState} />} />
     
     </div>
     </div>
